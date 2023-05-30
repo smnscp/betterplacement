@@ -1,0 +1,25 @@
+{
+  "name": "btrplcmnt",
+  "version": "0.0.1",
+  "title": "Btrplcmnt",
+  "description": "A better* design system based on Stylament",
+  "keywords": [
+    "color scheme"
+  ],
+  "license": "",
+  "author": "Simon Schrape",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "vite": "latest",
+    "vite-plugin-handlebars": "^1.6.0"
+  },
+  "dependencies": {
+    "@fontsource/fira-sans": "latest",
+    "stylament": "^0.20.1"
+  }
+}

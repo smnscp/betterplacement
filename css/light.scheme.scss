@@ -1,0 +1,13 @@
+@use "axioms/brand";
+@use "stylament/css/axioms/config" with (
+  $custom: (
+    coloring: (
+      palettes: brand.$palettes,
+    ),
+  )
+);
+@use "stylament/css/axioms/properties/color";
+
+:root {
+  color-scheme: light;
+}

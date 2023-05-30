@@ -1,0 +1,51 @@
+$primary: 74;
+$secondary: 308;
+$tertiary: 170;
+
+$pri: hsl(74, 90.6%, 41.8%);
+$sec: hsl(308, 37.2%, 37.5%);
+$ter: hsl(170, 34.7%, 53.7%);
+
+$range: (
+  step: 0.1,
+  start: 0,
+  end: 1,
+);
+$prefix: "color" !default;
+$suffix: (
+  factor: 1000,
+  inverse: false,
+) !default;
+
+/// Colors.
+/// @name palettes@brand
+$palettes: (
+  "grey": (
+    hue: $primary,
+    sl-curve: 0.1 1 0.3 1 0.3 0 0.1 0,
+    range: $range,
+    prefix: $prefix,
+    suffix: $suffix,
+  ),
+  "primary": (
+    hue: $primary,
+    sl-curve: 0.3 1 1.34 0.82 1.13 0.03 0.3 0,
+    range: $range,
+    prefix: $prefix,
+    suffix: $suffix,
+  ),
+  "secondary": (
+    hue: $secondary,
+    sl-curve: 0.3 1 1.05 0.78 0.91 0.015 0.3 0,
+    range: $range,
+    prefix: $prefix,
+    suffix: $suffix,
+  ),
+  "tertiary": (
+    hue: $tertiary,
+    sl-curve: 0.3 1 1.03 0.69 1.12 0.03 0.3 0,
+    range: $range,
+    prefix: $prefix,
+    suffix: $suffix,
+  ),
+);

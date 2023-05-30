@@ -1,0 +1,18 @@
+@use "axioms/brand" with (
+  $suffix: (
+    factor: 1000,
+    inverse: true,
+  )
+);
+@use "stylament/css/axioms/config" with (
+  $custom: (
+    coloring: (
+      palettes: brand.$palettes,
+    ),
+  )
+);
+@use "stylament/css/axioms/properties/color";
+
+:root {
+  color-scheme: dark;
+}
