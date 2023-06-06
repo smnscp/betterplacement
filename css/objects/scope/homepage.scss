@@ -1,0 +1,23 @@
+/// ## Homepage Header
+
+@use "stylament/css/utilities/layout/primitive/center.scss";
+// @use "stylament/css/utilities/layout/primitive/cover";
+
+/// Special homepage header styles.
+body.scp-homepage > header {
+  // @extend .lyo-cover;
+  background: url("/img/header.svg") no-repeat center/cover;
+  text-shadow: var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg), var(--shadow-md), var(--shadow-sm),
+    var(--shadow-xs);
+  padding-block: calc(2 * var(--spacing-sectioning));
+
+  h1 {
+    font-size: clamp(var(--scale-3), 10vmin, var(--scale-9));
+    line-height: 1;
+  }
+
+  & > * {
+    @extend %lyo-center--intrinsic;
+    backdrop-filter: blur(0.125rem);
+  }
+}
