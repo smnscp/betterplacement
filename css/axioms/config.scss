@@ -1,7 +1,22 @@
 @use "sass:math";
+@use "sass:meta";
+@use "stylament/css/axioms/config/mapping";
+@use "stylament/css/axioms/tools/arithmetic/function";
 @use "brand";
 
 $config: (
+  layout: (
+    spacing-inline: (
+      mapped: (
+        domain: mapping.$domain-sizes,
+        function: meta.get-function("exponential", $module: "function"),
+        params: (
+          base: 2,
+          coefficient: 2ch,
+        ),
+      ),
+    ),
+  ),
   typography: (
     font-family: (
       literal: (

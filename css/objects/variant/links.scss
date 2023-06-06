@@ -1,0 +1,15 @@
+a.var-cta {
+  display: inline-block;
+  color: var(--color-grey-100);
+  background: var(--color-primary-600);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  text-shadow: 0.03125em 0.03125em 0 var(--color-primary-700);
+  padding-inline: var(--spacing-inline-md);
+  box-shadow: inset 0 0 0.0625em var(--color-primary-500), var(--shadow-sm);
+  transition: box-shadow 0.3s var(--easing-in-quad);
+
+  &:hover {
+    box-shadow: inset 0 0 1em var(--color-primary-500), var(--shadow-md);
+  }
+}
