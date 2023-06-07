@@ -6,6 +6,14 @@
 
 $config: (
   layout: (
+    length: (
+      mapped: (
+        range: (
+          start: -1,
+          end: 10,
+        ),
+      ),
+    ),
     spacing-inline: (
       mapped: (
         domain: mapping.$domain-sizes,
@@ -88,6 +96,7 @@ $config: (
         heading-3: "primary-700",
         nav: "grey-100",
         nav-contra: "secondary-600",
+        nav-stroke: "secondary-300",
         links: "primary-600",
         links-contra: "tertiary-400",
         hr: "primary-500",

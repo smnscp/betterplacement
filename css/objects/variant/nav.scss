@@ -1,0 +1,11 @@
+nav.var-menu {
+  menu {
+    padding-block: var(--length-0aug);
+    background: var(--color-nav-contra);
+    margin-inline: calc(-1 * var(--stroke-width-1));
+  }
+  li {
+    block-size: var(--length-1½);
+    border-inline-start: var(--stroke-width-1) solid var(--color-nav-stroke);
+  }
+}
