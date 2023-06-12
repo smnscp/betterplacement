@@ -1,0 +1,14 @@
+{
+  "cssvar.files": [
+    "**/*.css",
+    "/dist/css/index.css"
+  ],
+  "cssvar.ignore": [
+    "**/node_modules/**",
+    "**/notes/**"
+  ],
+  "cssvar.extensions": [
+    "css",
+    "scss"
+  ]
+}
