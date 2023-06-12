@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "@fontsource/fira-sans": "latest",
-    "stylament": "^0.20.5"
+    "stylament": "^0.22.1"
   }
 }
