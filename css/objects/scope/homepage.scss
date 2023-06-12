@@ -9,7 +9,7 @@ body.scp-homepage > header {
   background: url("/img/header.svg") no-repeat center/cover;
   text-shadow: var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg), var(--shadow-md), var(--shadow-sm),
     var(--shadow-xs);
-  padding-block: calc(2 * var(--spacing-sectioning));
+  padding-block: calc(2 * var(--spacing-block-lg));
 
   h1 {
     font-size: clamp(var(--scale-3), 10vmin, var(--scale-9));
