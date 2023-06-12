@@ -6,6 +6,14 @@
 
 $config: (
   layout: (
+    container: (
+      mapped: (
+        params: (
+          slope: 17rem,
+          initial: 51rem,
+        ),
+      ),
+    ),
   ),
   typography: (
     font-family: (
