@@ -18,6 +18,30 @@ body.scp-homepage > header {
 
   & > * {
     @extend %lyo-center--intrinsic;
-    backdrop-filter: blur(0.125rem);
+    position: relative;
+
+    & > * {
+      position: relative;
+    }
+
+    &::before {
+      --color-backdrop: rgb(var(--color-shadow) / 0.25);
+      content: ' ';
+      position: absolute;
+      inset: -2rem;
+      box-shadow: 0 0 3rem 3rem var(--color-backdrop);
+      background: var(--color-backdrop);
+      border-radius: var(--radius-ellipse);
+      backdrop-filter: blur(0.125rem);
+    }
+  }
+
+  p :is(img, svg) {
+    border-radius: var(--radius-obround);
+    box-shadow: var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg), var(--shadow-md), var(--shadow-sm),
+    var(--shadow-xs);
+    background-color: var(--color-grey-100);
+    padding: var(--spacing-block-xs);
+    margin-block: calc(-1 * var(--spacing-block-xs));
   }
 }
