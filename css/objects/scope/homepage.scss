@@ -1,11 +1,11 @@
 /// ## Homepage Header
 
 @use "stylament/css/utilities/layout/primitive/center.scss";
-// @use "stylament/css/utilities/layout/primitive/cover";
+@use "stylament/css/utilities/layout/primitive/cover";
 
 /// Special homepage header styles.
 body.scp-homepage > header {
-  // @extend .lyo-cover;
+  @extend .lyo-cover;
   background: url("/img/header.svg") no-repeat center/cover;
   text-shadow: var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg), var(--shadow-md), var(--shadow-sm),
     var(--shadow-xs);
