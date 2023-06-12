@@ -1,11 +1,3 @@
-$primary: 74;
-$secondary: 308;
-$tertiary: 170;
-
-$pri: hsl(74, 90.6%, 41.8%);
-$sec: hsl(308, 37.2%, 37.5%);
-$ter: hsl(170, 34.7%, 53.7%);
-
 $range: (
   step: 0.1,
   start: 0,
@@ -21,29 +13,43 @@ $suffix: (
 /// @name palettes@brand
 $palettes: (
   "grey": (
-    hue: $primary,
+    hue: 0,
     sl-curve: 0 1.02 0 0.95 0 0.28 0 0.09,
     range: $range,
     prefix: $prefix,
     suffix: $suffix,
   ),
   "primary": (
-    hue: $primary,
+    hue: 74,
     sl-curve: 0.84 0.98 0.94 0.66 0.92 0.22 0.87 0.15,
     range: $range,
     prefix: $prefix,
     suffix: $suffix,
   ),
   "secondary": (
-    hue: $secondary,
+    hue: 308,
     sl-curve: 0.59 1.01 0.33 0.69 0.28 0.13 0.46 0.13,
     range: $range,
     prefix: $prefix,
     suffix: $suffix,
   ),
   "tertiary": (
-    hue: $tertiary,
+    hue: 170,
     sl-curve: 0.92 1 0.35 0.81 0.28 0.29 0.71 0.13,
+    range: $range,
+    prefix: $prefix,
+    suffix: $suffix,
+  ),
+  "quarternary": (
+    hue: 355,
+    sl-curve: 0.94 1 1.02 0.86 0.8 0.43 0.64 0.27,
+    range: $range,
+    prefix: $prefix,
+    suffix: $suffix,
+  ),
+  "quinary": (
+    hue: 42,
+    sl-curve: 1 1 0.91 0.67 10.2 0.54 1 0.32,
     range: $range,
     prefix: $prefix,
     suffix: $suffix,

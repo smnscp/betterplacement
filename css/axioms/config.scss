@@ -77,6 +77,20 @@ $config: (
   ),
   coloring: (
     color: (
+      literal: (
+        external-red-sparkasse: #ee0000,
+        external-blue-linkedin: #0a66c2,
+        external-pink-instagram: #e65083,
+        external-blue-twitter: #1da1f2,
+        external-blue-facebook: #4e69a2,
+        me-green-special: #ebf2e6,
+        me-blue-700: #005d90,
+        me-blue-500: #00a0c8,
+        me-blue-100: #e0f4f9,
+        me-orange-800: #6f1f06,
+        me-orange-600: #db6038,
+        me-orange-500: #ff854d,
+      ),
       logical: (
         body: "grey-900",
         body-contra: "grey-0",
