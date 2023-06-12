@@ -6,24 +6,6 @@
 
 $config: (
   layout: (
-    length: (
-      mapped: (
-        range: (
-          start: -1,
-          end: 10,
-        ),
-      ),
-    ),
-    spacing-inline: (
-      mapped: (
-        domain: mapping.$domain-sizes,
-        function: meta.get-function("exponential", $module: "function"),
-        params: (
-          base: 2,
-          coefficient: 2ch,
-        ),
-      ),
-    ),
   ),
   typography: (
     font-family: (
