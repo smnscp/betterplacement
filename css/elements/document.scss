@@ -9,7 +9,7 @@ body {
     @include coloring.set-colors("body");
     @include coloring.use-colors;
 
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-page-container);
   }
 
   & > footer {

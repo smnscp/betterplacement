@@ -69,9 +69,15 @@ $config: (
         params: (
           offset: 0.1875rem,
           blur: 0.375rem,
-          angle: 285deg,
+          angle: 270deg,
           color: var(--color-shadow),
         ),
+      ),
+      literal: (
+        all-in:
+          "var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg), var(--shadow-md), var(--shadow-sm), var(--shadow-xs)",
+        page-container: "0rem 0.75rem 0.75rem rgb(var(--color-shadow) / 0.25)",
+        backdrop: "0 0 3rem 3rem var(--color-backdrop)",
       ),
     ),
     stroke-width: (
@@ -88,6 +94,7 @@ $config: (
   coloring: (
     color: (
       literal: (
+        backdrop: "rgb(var(--color-shadow) / 0.2)",
         external-red-sparkasse: #ee0000,
         external-blue-linkedin: #0a66c2,
         external-pink-instagram: #e65083,
