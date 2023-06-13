@@ -1,5 +1,6 @@
 /// ## Homepage Header
 
+@use "stylament/css/axioms/generic/coloring";
 @use "stylament/css/utilities/layout/primitive/center.scss";
 @use "stylament/css/utilities/layout/primitive/cover";
 
@@ -7,6 +8,8 @@
 body.scp-homepage > header {
   --flow-space: var(--spacing-block-lg);
   @extend .lyo-cover;
+  @include coloring.alternate;
+  @include coloring.inverse;
   background: url("/img/header.svg") no-repeat center/cover;
   text-shadow: var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg),
     var(--shadow-md), var(--shadow-sm), var(--shadow-xs);
@@ -18,6 +21,7 @@ body.scp-homepage > header {
   }
 
   & > * {
+    @extend .lyo-center;
     @extend %lyo-center--intrinsic;
     position: relative;
 
