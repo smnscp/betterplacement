@@ -14,5 +14,19 @@ body {
 
   & > footer {
     border-block-start: var(--stroke-width-default) var(--stroke-style-default) var(--color-hr);
+
+    h3 {
+      font-size: var(--scale-0);
+      line-height: var(--line-0);
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    section + hr {
+      margin-block-start: var(--flow-space-sectioning);
+    }
   }
 }
