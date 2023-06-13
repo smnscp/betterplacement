@@ -11,4 +11,8 @@ body {
 
     box-shadow: var(--shadow-lg);
   }
+
+  & > footer {
+    border-block-start: var(--stroke-width-default) var(--stroke-style-default) var(--color-hr);
+  }
 }

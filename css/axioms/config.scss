@@ -74,6 +74,16 @@ $config: (
         ),
       ),
     ),
+    stroke-width: (
+      logical: (
+        default: 1,
+      ),
+    ),
+    stroke-color: (
+      literal: (
+        default: var(--color-neutral),
+      ),
+    ),
   ),
   coloring: (
     color: (
@@ -108,7 +118,7 @@ $config: (
         nav-stroke: "secondary-300",
         links: "primary-600",
         links-contra: "tertiary-400",
-        hr: "primary-500",
+        hr: "grey-300",
         heading-alternate: "heading",
         list-marker: "primary-500",
       ),
