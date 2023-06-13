@@ -1,0 +1,14 @@
+@use "/node_modules/stylament/css/utilities/layout/primitive/center.scss";
+
+body.lyo-page-center {
+  --container-size: var(--container-page);
+  --container-gutter: 5vw;
+
+  > :where(:not(.scp-homepage) > header, main, footer) {
+      @extend .lyo-center;
+    }
+
+  .\~breakout {
+    margin-inline: calc(-1 * var(--container-gutter));
+  }
+}
