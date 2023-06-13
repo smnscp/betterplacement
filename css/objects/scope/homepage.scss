@@ -37,7 +37,7 @@ body.scp-homepage > header {
     }
   }
 
-  p :is(img, svg) {
+  :is(h1, h2, h3, h4, h5, h6, p) :is(img, svg) {
     border-radius: var(--radius-obround);
     box-shadow: var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg),
       var(--shadow-md), var(--shadow-sm), var(--shadow-xs);
