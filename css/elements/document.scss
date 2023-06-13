@@ -1,0 +1,14 @@
+@use "stylament/css/axioms/generic/coloring";
+// @use "stylament/css/utilities/layout/primitive/center";
+
+body {
+  @include coloring.set-colors("env");
+  @include coloring.use-colors;
+
+  & > :is(main, header, footer) {
+    @include coloring.set-colors("body");
+    @include coloring.use-colors;
+
+    box-shadow: var(--shadow-lg);
+  }
+}

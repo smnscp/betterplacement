@@ -1,6 +1,7 @@
 @use "./axioms/config";
 @use "stylament/css/axioms" with ($config-custom: config.$config);
 @use "stylament/css/elements";
+@use "./elements/document";
 @use "stylament/css/idioms";
 @use "stylament/css/objects";
 @use "objects/scope/homepage";
