@@ -6,6 +6,8 @@
 @use "objects/scope/homepage";
 @use "objects/variant/links";
 @use "objects/variant/nav";
-@use "stylament/css/utilities";
+@use "stylament/css/utilities/coloring";
+@use "stylament/css/utilities/layout/primitive/wrap";
+@use "stylament/css/utilities/layout/complex/page-center";
 @use "stylament/css/utilities/atomic/measure";
 @use "stylament/css/utilities/dev";
