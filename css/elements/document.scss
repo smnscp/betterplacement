@@ -1,3 +1,4 @@
+@use "stylament/css/axioms/properties/io" as *;
 @use "stylament/css/axioms/generic/coloring";
 // @use "stylament/css/utilities/layout/primitive/center";
 
@@ -9,24 +10,20 @@ body {
     @include coloring.set-colors("body");
     @include coloring.use-colors;
 
-    box-shadow: var(--shadow-page-container);
+    box-shadow: svar(shadow-page-container);
   }
 
   & > footer {
-    border-block-start: var(--stroke-width-default) var(--stroke-style-default) var(--color-hr);
+    border-block-start: svar(stroke-width-default) svar(stroke-style-default) svar(color-hr);
 
     h3 {
-      font-size: var(--scale-0);
-      line-height: var(--line-0);
+      font-size: svar(scale-0);
+      line-height: svar(line-0);
       color: inherit;
     }
 
     ul {
       list-style: none;
-    }
-
-    section + hr {
-      margin-block-start: var(--flow-space-sectioning);
     }
   }
 }

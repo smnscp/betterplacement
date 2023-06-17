@@ -2,6 +2,7 @@
 @use "sass:meta";
 @use "stylament/css/axioms/config/mapping";
 @use "stylament/css/axioms/tools/arithmetic/function";
+@use "stylament/css/axioms/properties/io" as *;
 @use "brand";
 
 $config: (
@@ -75,9 +76,9 @@ $config: (
       ),
       literal: (
         all-in:
-          "var(--shadow-xxl), var(--shadow-xl), var(--shadow-lg), var(--shadow-md), var(--shadow-sm), var(--shadow-xs)",
+          #{svar(shadow-xxl), svar(shadow-xl), svar(shadow-lg), svar(shadow-md), svar(shadow-sm), svar(shadow-xs)},
         page-container: "0rem 0.75rem 0.75rem rgb(var(--color-shadow) / 0.25)",
-        backdrop: "0 0 3rem 3rem var(--color-backdrop)",
+        backdrop: "0 0 3rem 3rem #{svar(color-backdrop)}",
       ),
     ),
     stroke-width: (
@@ -86,8 +87,8 @@ $config: (
       ),
     ),
     stroke-color: (
-      literal: (
-        default: var(--color-neutral),
+      logical: (
+        default: "/color-neutral",
       ),
     ),
   ),

@@ -1,3 +1,6 @@
+@use "stylament/css/axioms/properties/io" with (
+  $-prefix: 🧈
+);
 @use "axioms/brand" with (
   $suffix: (
     factor: 1000,

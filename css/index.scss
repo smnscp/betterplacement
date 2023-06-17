@@ -1,12 +1,17 @@
+@use "stylament/css/axioms/properties/io" with (
+  $-prefix: 🧈
+);
 @use "./axioms/config";
-@use "stylament/css/axioms" with ($config-custom: config.$config);
+@use "stylament/css/axioms" with (
+  $config-custom: config.$config
+);
 @use "stylament/css/elements";
 @use "./elements/document";
 @use "stylament/css/idioms";
-@use "stylament/css/objects";
-@use "objects/scope/homepage";
-@use "objects/variant/links";
-@use "objects/variant/nav";
+@use "stylament/css/objects/variant";
+@use "./objects/scope/homepage";
+@use "./objects/variant/links";
+@use "./objects/variant/nav";
 @use "stylament/css/utilities/coloring";
 @use "stylament/css/utilities/layout/primitive/wrap";
 @use "./utilities/layout/complex/page-center";

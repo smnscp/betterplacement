@@ -1,14 +1,15 @@
-@use "/node_modules/stylament/css/utilities/layout/primitive/center.scss";
+@use "stylament/css/axioms/properties/io" as *;
+@use "stylament/css/utilities/layout/primitive/center";
 
 body.lyo-page-center {
-  --container-size: var(--container-page);
-  --container-gutter: 5vw;
+  ---container-size: #{svar(container-page)};
+  ---container-gutter: 5vw;
 
   > :where(:not(.scp-homepage) > header, main, footer) {
       @extend .lyo-center;
     }
 
   .\~breakout {
-    margin-inline: calc(-1 * var(--container-gutter));
+    margin-inline: calc(-1 * var(---container-gutter));
   }
 }

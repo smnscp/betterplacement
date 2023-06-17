@@ -1,30 +1,33 @@
 /// ## Homepage Header
 
+@use "stylament/css/axioms/properties/io" as *;
 @use "stylament/css/axioms/generic/coloring";
 @use "stylament/css/utilities/layout/primitive/center.scss";
 @use "stylament/css/utilities/layout/primitive/cover";
 
 /// Special homepage header styles.
 body.scp-homepage > header {
-  --flow-space: var(--spacing-block-lg);
+  ---flow-space: #{svar(flow-space-sectioning)};
   @extend .lyo-cover;
   @include coloring.alternate;
   @include coloring.inverse;
   background: url("/img/header.svg") no-repeat center/cover;
-  text-shadow: var(--shadow-all-in);
-  padding-block: calc(2 * var(--spacing-block-lg));
+  text-shadow: svar(shadow-all-in);
+  padding-block: calc(2 * svar(spacing-block-lg));
 
   h1 {
-    font-size: clamp(var(--scale-3), 10vmin, var(--scale-9));
+    font-size: clamp(svar(scale-3), 10vmin, svar(scale-9));
     line-height: 1;
   }
 
   & > * {
+    ---flow-space: inherit;
     @extend .lyo-center;
     @extend %lyo-center--intrinsic;
     position: relative;
 
     & > * {
+      ---flow-space: inherit;
       position: relative;
     }
 
@@ -32,18 +35,18 @@ body.scp-homepage > header {
       content: " ";
       position: absolute;
       inset: -2rem;
-      box-shadow: var(--shadow-backdrop);
-      background: var(--color-backdrop);
-      border-radius: var(--radius-ellipse);
+      box-shadow: svar(shadow-backdrop);
+      background: svar(color-backdrop);
+      border-radius: svar(radius-ellipse);
       backdrop-filter: blur(0.125rem);
     }
   }
 
   :is(h1, h2, h3, h4, h5, h6, p) :is(img, svg) {
-    border-radius: var(--radius-obround);
-    box-shadow: var(--shadow-all-in);
-    background-color: var(--color-grey-100);
-    padding: var(--spacing-block-xs);
-    margin-block: calc(-1 * var(--spacing-block-xs));
+    border-radius: svar(radius-obround);
+    box-shadow: svar(shadow-all-in);
+    background-color: svar(color-grey-100);
+    padding: svar(spacing-block-xs);
+    margin-block: calc(-1 * svar(spacing-block-xs));
   }
 }
