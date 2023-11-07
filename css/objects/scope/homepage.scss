@@ -11,7 +11,7 @@ body.scp-homepage > header {
   @extend .lyo-cover;
   @include coloring.alternate;
   @include coloring.inverse;
-  background: url("/img/header.svg") no-repeat center/cover;
+  background: var(---clr-bg) url("/img/header.svg") no-repeat center/cover;
   text-shadow: svar(shadow-all-in);
   padding-block: calc(2 * svar(spacing-block-lg));
 
