@@ -1,0 +1,43 @@
+{{ define "head" }}
+  <style>
+    table.dev-color-table {
+      ---table-border-width: var(--{{ .Site.Params.cssPropPrefix }}stroke-width-4);
+      ---table-border-color: var(--{{ .Site.Params.cssPropPrefix }}color-body-contra);
+      ---background-heavy: transparent;
+      ---background-light: transparent;
+    }
+    table.dev-color-table.dev-color-table th {
+      text-transform: capitalize;
+    }
+    table.dev-color-table.dev-color-table thead th,
+    table.dev-color-table.dev-color-table td {
+      min-inline-size: var(--{{ .Site.Params.cssPropPrefix }}length-2);
+      max-inline-size: var(--{{ .Site.Params.cssPropPrefix }}length-2);
+      letter-spacing: var(--{{ .Site.Params.cssPropPrefix }}letter-spacing-xxs);
+    }
+
+  </style>
+{{ end }}
+
+<section>
+  <table class="var-standard-table dev-color-table">
+    <thead>
+      <tr>
+        <th></th>
+        {{ range .Site.Params.colorSteps }}
+          <th>{{ . }}</th>
+        {{ end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $pal := $.Site.Params.colorPalettes }}
+        <tr>
+          <th>{{ . }}</th>
+          {{ range $step := $.Site.Params.colorSteps }}
+            <td style="background: var(--{{ $.Site.Params.cssPropPrefix }}color-{{ $pal }}-{{ $step }});"></td>
+          {{ end }}
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</section>

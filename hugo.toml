@@ -28,6 +28,9 @@ defaultContentLanguageInSubdir = true
 [markup.highlight]
 	noClasses = false
 [params]
+  cssPropPrefix = '🧈'
+  colorSteps = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+  colorPalettes = ['grey', 'primary', 'secondary', 'tertiary', 'quarternary', 'quinary']
 [module]
 [[module.mounts]]
   source = 'static'
