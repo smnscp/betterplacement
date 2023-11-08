@@ -16,7 +16,7 @@ body.scp-homepage > header {
   padding-block: calc(2 * svar(spacing-block-lg));
 
   h1 {
-    font-size: clamp(svar(scale-3), 10vmin, svar(scale-9));
+    font-size: clamp(svar(font-size-3), 10vmin, svar(font-size-9));
     line-height: 1;
     // Don’t let flex-box shrink this too drastically.
     min-inline-size: 10ch;

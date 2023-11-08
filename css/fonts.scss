@@ -2,7 +2,7 @@
 @use "axioms/config";
 @use "@fontsource/fira-sans/scss/mixins" as Sans;
 
-$weights: map.values(map.get(config.$config, typography, font-weight, literal));
+$weights: map.values(map.get(config.$config, typography, font, weight, literal));
 $styles: normal italic;
 
 @include Sans.faces($directory: "/fonts/fira-sans/files", $weights: $weights, $styles: $styles);

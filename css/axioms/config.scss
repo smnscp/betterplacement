@@ -17,39 +17,41 @@ $config: (
     ),
   ),
   typography: (
-    font-family: (
-      literal: (
-        sans: (
-          "Fira Sans",
-          "Helvetica Neue",
-          Helvetica,
-          sans-serif,
+    font: (
+      family: (
+        literal: (
+          sans: (
+            "Fira Sans",
+            "Helvetica Neue",
+            Helvetica,
+            sans-serif,
+          ),
+          mono: (
+            "Fira Code",
+            Consolas,
+            Menlo,
+            Monaco,
+            "Liberation Mono",
+            monospace,
+          ),
         ),
-        mono: (
-          "Fira Code",
-          Consolas,
-          Menlo,
-          Monaco,
-          "Liberation Mono",
-          monospace,
+        logical: (
+          body: "sans",
+          heading: "sans",
+          display: "body",
         ),
       ),
-      logical: (
-        body: "sans",
-        heading: "sans",
-        display: "body",
-      ),
-    ),
-    font-weight: (
-      mapped: null,
-      literal: (
-        regular: 400,
-        bold: 700,
-      ),
-      logical: (
-        body: "regular",
-        emphasis: "bold",
-        heading: "bold",
+      weight: (
+        mapped: null,
+        literal: (
+          regular: 400,
+          bold: 700,
+        ),
+        logical: (
+          body: "regular",
+          emphasis: "bold",
+          heading: "bold",
+        ),
       ),
     ),
     line: (
