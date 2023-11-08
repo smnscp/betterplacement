@@ -1,0 +1,13 @@
+<article class="var-article-list-item" itemscope itemtype="http://schema.org/Blog">
+  <h2 itemprop="headline">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ if .Draft }}<small>(Draft)</small>{{ end }}
+  </h2>
+  <dl class="var-meta">
+    {{ partial "article/date-published.html" .Date }}
+  </dl>
+  <section class="summary">
+    {{ .Summary }}
+    {{ if .Truncated }}<a href="{{ .RelPermalink }}">{{ i18n "readmore" | strings.FirstUpper }}</a>{{ end }}
+  </section>
+</article>

@@ -1,0 +1,16 @@
+[recentPosts]
+  other = 'letzte Artikel'
+[categories]
+  other = 'Kategorien'
+[tags]
+  other = 'Schlagwörter'
+[readmore]
+  other = 'weiterlesen …'
+[languages]
+  other = 'Sprachen'
+[translations]
+  other = 'Übersetzungen'
+[wordCount]
+  other = '{{ .WordCount }} Wörter'
+[publishedOn]
+  other = 'veröffentlicht am'

@@ -1,0 +1,7 @@
+{{/* define "scope-class" }}scp-list{{ end */}}
+{{ define "main" }}
+  <section>
+    <h1>{{ .Title }}</h1>
+    {{ partial "article/list.html" (.Paginator (or .Site.Params.paginate 3)) }}
+  </section>
+{{ end }}

@@ -1,0 +1,12 @@
+{{ if .IsTranslated }}
+  <dt>{{ i18n "translations" | title }}</dt>
+  {{ range .Translations }}
+    <dd>
+      <a href="{{ .Permalink }}"
+        >{{ .Lang }}:
+        {{ .Title }}
+        {{ if .IsPage }}({{ i18n "wordCount" . }}){{ end }}</a
+      >
+    </dd>
+  {{ end }}
+{{ end }}

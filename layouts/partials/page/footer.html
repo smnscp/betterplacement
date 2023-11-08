@@ -48,4 +48,10 @@
     <h2><img src="/img/logo.svg" alt="The logo again"> Btrplcmnt <em>rocks</em>!</h2>
     <p class="dev-lorem-ipsum"></p>
   </section>
+  <section>
+    {{ partial "page/footer/languages.html" . }}
+  </section>
+  <section>
+    <p>© {{ .Site.LastChange.Year }} {{ .Site.Title }}</p>
+  </section>
 </footer>

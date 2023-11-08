@@ -1,0 +1,26 @@
+<article
+  class="var-single-article"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
+  <dl class="var-meta">
+    {{ partial "article/date-published.html" .Page.Date }}
+    {{ with .Params.categories }}
+      <dt>sorted in</dt>
+      {{ range . }}
+        <dd><a href="/categories/{{ . | urlize }}">{{ . }}</a></dd>
+      {{ end }}
+    {{ end }}
+    {{ with .Params.tags }}
+      <dt>tags</dt>
+      {{ range . }}
+        <dd><a href="/tags/{{ . | urlize }}">{{ . }}</a></dd>
+      {{ end }}
+    {{ end }}
+    {{ partial "article/translations.html" . }}
+  </dl>
+  <h1 itemprop="headline">{{ .Title }}</h1>
+  <section class="body" itemprop="articleBody">
+    {{ .Content }}
+  </section>
+</article>

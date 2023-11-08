@@ -1,0 +1,38 @@
+baseURL = "https://btrplcmnt.sim.ilitu.de/"
+title = "Btrplcmnt"
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.de]
+    # contentDir = 'content/de'
+    disabled = false
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    weight = 1
+    [languages.de.params]
+      subtitle = ''
+  [languages.en]
+    # contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 2
+    [languages.en.params]
+      subtitle = ''
+
+# theme = "btrplcmnt"
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+	noClasses = false
+[params]
+[module]
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+[[module.mounts]]
+  source = 'node_modules/@fontsource/fira-sans/files'
+  target = 'static/fonts/files'
+  includeFiles = '*.woff?'

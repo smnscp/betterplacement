@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="{{ if eq .Description "" }}
+        {{ .Site.Params.description }}
+      {{ else }}
+        {{ .Description }}
+      {{ end }}"
+    />
+    {{- with $.Param "keywords" }}
+      <meta name="keywords" content="{{ delimit . "," }}" />
+    {{- end }}
+    {{- with $.Param "author" }}
+      <meta name="author" content="{{ . }}" />
+    {{- end }}
+    {{ hugo.Generator }}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/img/logo.svg" rel="shortcut icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="/css/dark.scheme.css" />
+    <link rel="stylesheet" media="not (prefers-color-scheme: dark)" href="/css/light.scheme.css" />
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <title>{{ delimit (slice .Title .Site.Title) " | " }}</title>
+    {{ block "head" . }}
+    {{ end }}
+  </head>
+  <body class="lyo-page-center {{ block "scope-class" . }}{{ end }}">
+    <header>
+      {{ block "header" . }}
+        {{ partial "page/header.html" . }}
+      {{ end }}
+    </header>
+
+    <nav class="var-menu +levelable +foldable-when-stacked +sticky +end">
+      <input type="checkbox" id="-toggle-state-0">
+      <label for="-toggle-state-0"></label>
+      {{ block "navigation" . }}
+        {{ with where .Site.RegularPages "Section" "pages" }}
+          {{ partial "page/navigation.html" . }}
+        {{ end }}
+      {{ end }}
+    </nav>
+
+    <main>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+    <footer>
+      {{ block "footer" . }}
+        {{ partial "page/footer.html" . }}
+      {{ end }}
+    </footer>
+  </body>
+</html>

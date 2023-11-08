@@ -1,6 +1,6 @@
 {
   "name": "btrplcmnt",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "title": "Btrplcmnt",
   "description": "A better* design system based on Stylament",
   "keywords": [
@@ -9,17 +9,20 @@
   "license": "",
   "author": "Simon Schrape",
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "sass": "^1.55.0",
-    "vite": "latest",
-    "vite-plugin-handlebars": "^1.6.0"
+    "clean": "rm -rf public",
+    "mkcss": "sass --no-source-map --load-path=node_modules assets/css/index.scss:static/css/style.css assets/css/light.scheme.scss:static/css/light.scheme.css assets/css/dark.scheme.scss:static/css/dark.scheme.css",
+    "start": "NODE_ENV=development npm run clean && npm run watchcss & npm run devserver",
+    "build": "NODE_ENV=production npm run clean && npm run mkcss && hugo --gc --minify",
+    "watchcss": "npm run mkcss -- --watch",
+    "devserver": "hugo server -DF --config hugo.toml,hugo.local.toml"
   },
   "dependencies": {
+    "sass": "^1.69.5",
     "@fontsource/fira-sans": "latest",
-    "stylament": "^0.23.0"
+    "stylament": "0.x"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-go-template": "^0.0.15"
   }
 }

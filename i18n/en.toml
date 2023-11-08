@@ -1,0 +1,16 @@
+[recentPosts]
+  other = 'recent posts'
+[categories]
+  other = 'categories'
+[tags]
+  other = 'tags'
+[readmore]
+  other = 'read more …'
+[languages]
+  other = 'languages'
+[translations]
+  other = 'translations'
+[wordCount]
+  other = '{{ .WordCount }} words'
+[publishedOn]
+  other = 'published on'

@@ -5,4 +5,4 @@
 $weights: map.values(map.get(config.$config, typography, font, weight, literal));
 $styles: normal italic;
 
-@include Sans.faces($directory: "/fonts/fira-sans/files", $weights: $weights, $styles: $styles);
+@include Sans.faces($directory: "../fonts/files", $weights: $weights, $styles: $styles);
