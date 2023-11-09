@@ -13,6 +13,12 @@ body {
     box-shadow: svar(shadow-page-container);
   }
 
+  & > header {
+    h1 a {
+      text-decoration: none;
+    }
+  }
+
   & > footer {
     border-block-start: svar(stroke-width-default) svar(stroke-style-default) svar(color-hr);
 
