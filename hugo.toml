@@ -11,6 +11,7 @@ defaultContentLanguageInSubdir = true
     languageName = 'Deutsch'
     weight = 1
     [languages.de.params]
+      flag = ':de:'
       subtitle = 'Better* Designsystem gegründet auf Felsen'
       titleCta = 'Guck mal, diese Farben!'
   [languages.en]
@@ -21,6 +22,7 @@ defaultContentLanguageInSubdir = true
     languageName = 'English'
     weight = 2
     [languages.en.params]
+      flag = ':gb:'
       subtitle = 'Better* design system based on rocks'
       titleCta = 'Look at these colors!'
 

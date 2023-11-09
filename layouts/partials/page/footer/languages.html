@@ -1,6 +1,0 @@
-<h4>{{ i18n "noun.languages" | title }}</h4>
-<ul>
-  {{ range site.Home.AllTranslations }}
-    <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-  {{ end }}
-</ul>

@@ -1,0 +1,3 @@
+{{ range site.Home.AllTranslations }}
+  <li><a href="{{ .Permalink }}">{{ emojify .Language.Params.Flag }} {{ .Language.LanguageName }}</a></li>
+{{ end }}

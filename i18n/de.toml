@@ -2,10 +2,14 @@
   other = 'Alte Weisheit'
 [dummy.quotation]
   other = 'Bau immer auf festen Grund!'
+[noun.homepage]
+  other = 'Startseite'
 [noun.languages]
   other = 'Sprachen'
 [noun.listitem]
   other = 'Listenpunkt'
+[noun.pages]
+  other = 'Seiten'
 [noun.section]
   other = 'Abschnitt'
 [noun.subsection]

@@ -2,10 +2,15 @@
   <section class="lyo-wrap-grid @measure-xs">
     <h2 hidden>Footer Links</h2>
     <section>
-      <h3>Pages</h3>
+      <h3>{{ i18n "noun.languages" | title }}</h3>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/color.html">Color table</a></li>
+        {{ partial "page/language-list.html" . }}
+      </ul>
+
+      <h3>{{ i18n "noun.pages" | title }}</h3>
+      <ul>
+        <li><a href="/">🏠 {{ i18n "noun.homepage" | title }}</a></li>
+        {{ partial "page/page-list.html" . }}
       </ul>
     </section>
     <section>
@@ -47,9 +52,6 @@
   <section>
     <h2><img src="/img/logo.svg" alt="The logo again"> Btrplcmnt <em>rocks</em>!</h2>
     <p class="dev-lorem-ipsum"></p>
-  </section>
-  <section>
-    {{ partial "page/footer/languages.html" . }}
   </section>
   <section>
     <p>© {{ .Site.LastChange.Year }} {{ .Site.Title }}</p>
