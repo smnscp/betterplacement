@@ -30,11 +30,11 @@
       </tr>
     </thead>
     <tbody>
-      {{ range $pal := $.Site.Params.colorPalettes }}
+      {{ range $pal := site.Params.colorPalettes }}
         <tr>
           <th>{{ . }}</th>
-          {{ range $step := $.Site.Params.colorSteps }}
-            <td style="background: var(--{{ $.Site.Params.cssPropPrefix }}color-{{ $pal }}-{{ $step }});"></td>
+          {{ range $step := site.Params.colorSteps }}
+            <td style="background: var(--{{ site.Params.cssPropPrefix }}color-{{ $pal }}-{{ $step }});"></td>
           {{ end }}
         </tr>
       {{ end }}
