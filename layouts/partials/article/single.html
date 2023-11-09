@@ -4,7 +4,7 @@
   itemtype="http://schema.org/BlogPosting"
 >
   <dl class="var-meta">
-    {{ partial "article/date-published.html" .Page.Date }}
+    {{ partial "article/meta/date-published.html" .Page.Date }}
     {{ with .Params.categories }}
       <dt>sorted in</dt>
       {{ range . }}
@@ -17,7 +17,7 @@
         <dd><a href="/tags/{{ . | urlize }}">{{ . }}</a></dd>
       {{ end }}
     {{ end }}
-    {{ partial "article/translations.html" . }}
+    {{ partial "article/meta/translations.html" . }}
   </dl>
   <h1 itemprop="headline">{{ .Title }}</h1>
   <section class="body" itemprop="articleBody">

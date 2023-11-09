@@ -4,7 +4,7 @@
     {{ if .Draft }}<small>(Draft)</small>{{ end }}
   </h2>
   <dl class="var-meta">
-    {{ partial "article/date-published.html" .Date }}
+    {{ partial "article/meta/date-published.html" .Date }}
   </dl>
   <section class="summary">
     {{ .Summary }}
