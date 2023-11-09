@@ -38,7 +38,7 @@
       <input type="checkbox" id="-toggle-state-0">
       <label for="-toggle-state-0"></label>
       {{ block "navigation" . }}
-        {{ with where .Site.RegularPages "Section" "pages" }}
+        {{ with where .Site.RegularPages.ByDate "Section" "pages" }}
           {{ partial "page/navigation.html" . }}
         {{ end }}
       {{ end }}
