@@ -11,7 +11,8 @@ defaultContentLanguageInSubdir = true
     languageName = 'Deutsch'
     weight = 1
     [languages.de.params]
-      subtitle = ''
+      subtitle = 'Better* Designsystem gegründet auf Felsen'
+      titleCta = 'Guck mal, diese Farben!'
   [languages.en]
     # contentDir = 'content/en'
     disabled = false
@@ -20,7 +21,8 @@ defaultContentLanguageInSubdir = true
     languageName = 'English'
     weight = 2
     [languages.en.params]
-      subtitle = ''
+      subtitle = 'Better* design system based on rocks'
+      titleCta = 'Look at these colors!'
 
 # theme = "btrplcmnt"
 [markup.goldmark.renderer]

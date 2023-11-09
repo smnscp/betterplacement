@@ -1,11 +1,11 @@
 {{ if .IsTranslated }}
-  <dt>{{ i18n "translations" | title }}</dt>
+  <dt>{{ i18n "noun.translations" | title }}</dt>
   {{ range .Translations }}
     <dd>
       <a href="{{ .Permalink }}"
         >{{ .Lang }}:
         {{ .Title }}
-        {{ if .IsPage }}({{ i18n "wordCount" . }}){{ end }}</a
+        {{ if .IsPage }}({{ i18n "ui.wordCount" . }}){{ end }}</a
       >
     </dd>
   {{ end }}

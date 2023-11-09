@@ -1,16 +1,26 @@
-[recentPosts]
-  other = 'letzte Artikel'
-[categories]
-  other = 'Kategorien'
-[tags]
-  other = 'Schlagwörter'
-[readmore]
-  other = 'weiterlesen …'
-[languages]
+[dummy.cite]
+  other = 'Alte Weisheit'
+[dummy.quotation]
+  other = 'Bau immer auf festen Grund!'
+[noun.languages]
   other = 'Sprachen'
-[translations]
+[noun.listitem]
+  other = 'Listenpunkt'
+[noun.section]
+  other = 'Abschnitt'
+[noun.subsection]
+  other = 'Unterabschnitt'
+[noun.translations]
   other = 'Übersetzungen'
-[wordCount]
-  other = '{{ .WordCount }} Wörter'
-[publishedOn]
+[taxonomy.categories]
+  other = 'Kategorien'
+[taxonomy.tags]
+  other = 'Schlagwörter'
+[ui.publishedOn]
   other = 'veröffentlicht am'
+[ui.readmore]
+  other = 'weiterlesen …'
+[ui.recentPosts]
+  other = 'letzte Beiträge'
+[ui.wordCount]
+  other = '{{ .WordCount }} Wörter'

@@ -4,7 +4,7 @@
   {{ partial "homepage/dummy-content.html" . }}
 
   <section id="sec:recent-posts">
-    <h2>{{ i18n "recentPosts" | title }}</h2>
+    <h2>{{ i18n "ui.recentPosts" | title }}</h2>
     {{ partial "article/list.html" (.Paginate
       (where
       (where .Site.RegularPages "Type" "posts")
@@ -15,7 +15,7 @@
 
   {{ range $taxonomy, $terms := .Site.Taxonomies }}
     <section id="sec:{{ $taxonomy }}">
-      <h2>{{ $taxonomy | i18n |title }}</h2>
+      <h2>{{ printf "taxonomy.%s" $taxonomy | i18n | title }}</h2>
       <ul class="var-taxonomy-cloud +{{ $taxonomy }}">
         {{ range $term, $_ := $terms }}
           <li data-count="{{ .Count }}" style="--count: {{ .Count }}">

@@ -1,16 +1,26 @@
-[recentPosts]
-  other = 'recent posts'
-[categories]
-  other = 'categories'
-[tags]
-  other = 'tags'
-[readmore]
-  other = 'read more …'
-[languages]
+[dummy.cite]
+  other = 'Old wisdom'
+[dummy.quotation]
+  other = 'Always build on solid ground!'
+[noun.languages]
   other = 'languages'
-[translations]
+[noun.listitem]
+  other = 'list item'
+[noun.section]
+  other = 'section'
+[noun.subsection]
+  other = 'subsection'
+[noun.translations]
   other = 'translations'
-[wordCount]
-  other = '{{ .WordCount }} words'
-[publishedOn]
+[taxonomy.categories]
+  other = 'categories'
+[taxonomy.tags]
+  other = 'tags'
+[ui.publishedOn]
   other = 'published on'
+[ui.readmore]
+  other = 'read more …'
+[ui.recentPosts]
+  other = 'recent posts'
+[ui.wordCount]
+  other = '{{ .WordCount }} words'

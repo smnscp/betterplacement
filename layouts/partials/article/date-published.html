@@ -1,5 +1,5 @@
 {{ if not .IsZero }}
-  <dt>{{ i18n "publishedOn" }}</dt>
+  <dt>{{ i18n "ui.publishedOn" }}</dt>
   <dd>
     <time itemprop="datePublished" datetime="{{ .Format "2006-01-02" }}">
       {{ . | time.Format ":date_full" }}
