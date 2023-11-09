@@ -38,9 +38,9 @@
       <input type="checkbox" id="-toggle-state-0">
       <label for="-toggle-state-0"></label>
       {{ block "navigation" . }}
-        {{ with where .Site.RegularPages.ByDate "Section" "pages" }}
-          {{ partial "page/navigation.html" . }}
-        {{ end }}
+        <menu>
+          {{ partial "page/page-list.html" . }}
+        </menu>
       {{ end }}
     </nav>
 

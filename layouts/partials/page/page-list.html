@@ -1,0 +1,3 @@
+{{ range $i, $page := where .Site.RegularPages.ByDate "Section" "pages" }}
+  <li><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></li>
+{{ end }}
