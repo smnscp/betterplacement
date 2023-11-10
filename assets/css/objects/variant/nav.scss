@@ -8,6 +8,6 @@ nav.var-menu {
   }
   li {
     block-size: svar(length-1½);
-    border-inline-start: svar(stroke-width-1) solid svar(color-nav-stroke);
+    border-inline: svar(stroke-width-1) solid svar(color-nav-stroke);
   }
 }
