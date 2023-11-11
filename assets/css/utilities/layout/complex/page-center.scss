@@ -5,9 +5,9 @@ body.lyo-page-center {
   ---container-size: #{svar(container-page)};
   ---container-gutter: 5vw;
 
-  > :where(:not(.scp-homepage) > header, main, footer) {
-      @extend .lyo-center;
-    }
+  > :where(:not(.scp-homepage) > header, nav, main, footer) {
+    @extend .lyo-center;
+  }
 
   .\~breakout {
     margin-inline: calc(-1 * var(---container-gutter));
