@@ -7,7 +7,6 @@ body > nav.var-menu:first-of-type {
 
   menu {
     padding-block: svar(length-0aug);
-    margin-inline: calc(-1 * svar(stroke-width-1));
   }
   li {
     block-size: svar(length-1½);
