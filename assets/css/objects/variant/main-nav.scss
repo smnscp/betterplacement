@@ -1,9 +1,12 @@
 @use "stylament/css/axioms/properties/io" as *;
+@use "stylament/css/objects/variant/nav/menu";
 
 body > nav.var-menu:first-of-type {
   ---menu-shadow: 0;
-  box-shadow: -80em 0 var(---clr-fg), 80em 0 var(---clr-fg);
-  background-color: svar(color-nav-contra);
+
+  @media (min-width: menu.$nav-wide) {
+    background: radial-gradient(circle, svar(color-nav-contra) calc(var(---container-size) / 2), var(---clr-fg) 100%);
+  }
 
   menu {
     padding-block: svar(length-0aug);
