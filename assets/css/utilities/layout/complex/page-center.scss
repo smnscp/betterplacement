@@ -5,7 +5,8 @@
   ---container-size: #{svar(container-page)};
   ---container-gutter: 5vw;
 
-  > :where(:not(.scp-homepage) > header, nav, main, footer) {
+  > :where(:not(.scp-homepage) > header, main, footer),
+  > nav > menu {
     @extend .lyo-center;
   }
 

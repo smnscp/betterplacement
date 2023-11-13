@@ -7,6 +7,7 @@ body > nav.var-menu:first-of-type {
 
   menu {
     padding-block: svar(length-0aug);
+    background: svar(color-nav-contra);
   }
   li {
     block-size: svar(length-1½);
